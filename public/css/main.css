@@ -11,6 +11,8 @@ body
 .jumbotron
 	{
 		background-color: #5A708C;
+		padding-top: 30px;
+		padding-bottom: 40px;
 	}
 
 #people
@@ -25,25 +27,27 @@ body
 	{
 		font-family: Segoe UI light;
 		color: #5A708C;
-		padding-top: 40px;
+		padding-top: 10px;
 		font-size: 32px;
 		text-align: center;
 	}
 
 #map
 	{
-		margin-top: 50px;
+		margin-top: 30px;
 		margin-left: 10px;
-		width: 500px;
-		height: auto;
+		background-color: #000;
+		width: 450px;
+		height: 350px;
+		overflow: hidden;
 	}
 
 #cards
 	{
 		list-style-type: none;
-		margin-top: 90px;
+		margin-top: 30px;
 		margin-left: 50px;
-		width: 480px;
+		width: 500px;
 		
 		overflow: hidden;
 	}
@@ -51,10 +55,10 @@ body
 	{
 		display: inline-block;
 		background-color: #f2f2f2;
-		margin-right: 20px;
-		width: 400px;
+		margin-right: 60px;
+		width: 450px;
 		border: solid 1px #dcdcdc;
-		height: 400px;
+		height: 350px;
 	}
 .card-image
 	{
