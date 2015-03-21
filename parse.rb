@@ -1,9 +1,10 @@
 require 'sinatra'
 
-get '/api' do
+require 'spreadsheet'
+require 'json'
 
-	require 'spreadsheet'
-	require 'json'
+get '/api' do
+	content_type :json
 	Spreadsheet.client_encoding = 'UTF-8'
 	book = Spreadsheet.open 'state.xls'
 	sheet1 = book.worksheet 0
