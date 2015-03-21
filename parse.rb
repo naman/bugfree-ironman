@@ -2,7 +2,7 @@ require 'sinatra'
 
 require 'spreadsheet'
 require 'json'
-set :static_cache_control, [:public, {:max_age => 300}]
+# set :static_cache_control, [:public, {:max_age => 300}]
 get '/api' do
 	content_type :json
 	Spreadsheet.client_encoding = 'UTF-8'
