@@ -21,8 +21,7 @@ get '/api' do
 		ul = 100 - l
 		rural = (row[8].to_f/row[3].to_f*100.0).round
 		urban = 100 -rural
-		km = (row[10]/100.0).round
-	  state[row[1]] = {male: male,female: female,literate: l,illiterate: ul,urban: urban,rural: rural,km: km}
+	  state[row[1]] = {male: male,female: female,literate: l,illiterate: ul,urban: urban,rural: rural}
 	end
 	state.to_json
 end
