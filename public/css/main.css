@@ -70,7 +70,7 @@ body
 		font-size: 24px;
 		text-align: center; 
 	}
-#literacy-picture
+#labor-picture
 	{
 		margin-top: 60px;
 		max-width:300px;
@@ -80,15 +80,15 @@ body
 		font-size: 24px;
 		color: #5A708C;
 	}
-.literate 
+.labor 
 	{
 		color: #f39c12;
 	}
-.lit-text
+.labor-text
 	{
 		color: #f39c12;
 	}
-.illit-text
+.nonlabor-text
 	{
 		margin-left: 180px;
 	}
@@ -160,8 +160,110 @@ body
 
 
 
+/*map coloring
+
+[data-code="IN-AN"] {
+	fill:#e74c3c;
+	}
+[data-code="IN-BR"] {
+	fill:#4FC1E9;
+	}
+[data-code="IN-MZ"] {
+	fill:#e74c3c;
+	}
+[data-code="IN-DD"] {
+	fill:#4FC1E9;
+	}
+[data-code="IN-DN"] {
+	fill:#e74c3c;
+	}
+[data-code="IN-DL"] {
+	fill:#e74c3c;
+	}
+[data-code="IN-NL"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-WB"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-HR"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-HP"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-AS"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-UT"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-JH"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-JK"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-UP"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-SK"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-CT"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-CH"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-GA"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-GJ"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-RJ"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-MP"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-MH"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-TN"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-PY"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-AP"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-TR"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-AR"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-KA"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-PB"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-ML"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-MN"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-OR"] {
+	fill:#e74c3c;
+	}
+	[data-code="IN-KL"] {
+	fill:#e74c3c;
+	}
 
 
-
-
-
+*/
