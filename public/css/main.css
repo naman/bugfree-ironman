@@ -63,7 +63,13 @@ body
 		border: solid 1px #dcdcdc;
 		height: 350px;
 	}
-
+.stat-card p
+	{
+		color: #5A708C;
+		margin-top: 10px;
+		font-size: 24px;
+		text-align: center; 
+	}
 .card-image
 	{
 		display: block;
@@ -71,12 +77,27 @@ body
 		margin-right: auto;
 		margin-top: 60px;
 	}
+
+.age-card p
+	{
+		margin-left: -20px;
+	}
+.young
+	{
+
+	}
+.adult
+	{
+		margin-left: 110px;
+		margin-right: 110px;
+	}
+.old
+	{
+
+	}
 .gender-card p
 	{
-		color: #5A708C;
-		margin-top: 10px;
-		font-size: 24px;
-		text-align: center; 
+		 
 		margin-left: -5px;
 	}
 .female
