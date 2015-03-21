@@ -78,20 +78,39 @@ body
 		margin-top: 60px;
 	}
 
+.urbanrural-card-image
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 90px;
+	}
+.urbanrural-card p
+	{
+		 
+		margin-left: 10px;
+	}
+.urban
+	{
+		margin-left: 180px;
+	}
+
 .age-card p
 	{
 		margin-left: -20px;
 	}
-.young
+
+
+.young, .muslim
 	{
 
 	}
-.adult
+.adult, .hindu
 	{
 		margin-left: 110px;
 		margin-right: 110px;
 	}
-.old
+.old, .christian
 	{
 
 	}
