@@ -20,7 +20,7 @@
         
         <link rel="stylesheet" href="css/slick-theme.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -53,9 +53,23 @@
 
           <div id="cards">
             
+
+            <div class="stat-card literacy-card">
+              <div id="literacy-picture">
+                <span class="literate" data-toggle="tooltip" data-placement="top" title="Labouring Children">
+                  <i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i></span><span class="illiterate" data-toggle="tooltip" data-placement="top" title="Non-Labouring Children"><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-hild"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i>
+                  </span>
+              </div>
+              <p><span class="lit-text" data-toggle="tooltip" data-placement="right" title="Labouring Children">30</span><span class="illit-text" data-toggle="tooltip" data-placement="left" title="Non-Labouring Children">40</span></p>
+            </div>
+
+            <div class="stat-card urbanrural-card">
+              <img src="img/urbanrural.png" class="urbanrural-card-image">
+              <p><span class="rural">30</span><span class="urban">40</span></p>
+            </div>
             <div class="stat-card religion-card">
               <img src="img/religion.png" class="card-image">
-              <p><span class="young">30</span><span class="adult">40</span><span class="old">40</span><br><br><span class="other-religions">Others: 20</span></p>
+              <p><span class="muslim">30</span><span class="hindu">40</span><span class="christian">40</span><br><br><span class="other-religions">Others: 20</span></p>
             </div>
             <div class="stat-card age-card">
               <img src="img/ages.png" class="card-image">
@@ -90,8 +104,15 @@
         <script src="js/slick.js"></script>
         <script src="js/main.js"></script>
 
+        <script type="text/javascript">
+        $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+        </script>
+
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
+
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];

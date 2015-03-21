@@ -70,6 +70,28 @@ body
 		font-size: 24px;
 		text-align: center; 
 	}
+#literacy-picture
+	{
+		margin-top: 60px;
+		max-width:300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 24px;
+		color: #5A708C;
+	}
+.literate 
+	{
+		color: #f39c12;
+	}
+.lit-text
+	{
+		color: #f39c12;
+	}
+.illit-text
+	{
+		margin-left: 180px;
+	}
 .card-image
 	{
 		display: block;
@@ -78,20 +100,39 @@ body
 		margin-top: 60px;
 	}
 
+.urbanrural-card-image
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 90px;
+	}
+.urbanrural-card p
+	{
+		 
+		margin-left: 10px;
+	}
+.urban
+	{
+		margin-left: 180px;
+	}
+
 .age-card p
 	{
 		margin-left: -20px;
 	}
-.young
+
+
+.young, .muslim
 	{
 
 	}
-.adult
+.adult, .hindu
 	{
 		margin-left: 110px;
 		margin-right: 110px;
 	}
-.old
+.old, .christian
 	{
 
 	}
@@ -112,7 +153,7 @@ body
 		height: 30px;
 		background-color: #54ACBF;
 		width: auto;
-		margin-top: 70px;
+		margin-top: 40px;
 	}
 
 
