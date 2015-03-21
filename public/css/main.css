@@ -6,6 +6,7 @@
 body
 {
 	background-color: #e9e9e9;
+	font-family: Segoe UI light;
 }
 
 .jumbotron
@@ -21,20 +22,22 @@ body
 		margin-top: -60px;
     	margin-left: auto;
     	margin-right: auto;
+    	height: 50px;
+    	width: auto;
 	}
 
 #whatif
 	{
 		font-family: Segoe UI light;
 		color: #5A708C;
-		padding-top: 10px;
-		font-size: 32px;
+		padding-top: 20px;
+		font-size: 28px;
 		text-align: center;
 	}
 
 #map
 	{
-		margin-top: 30px;
+		margin-top: 40px;
 		margin-left: 10px;
 		background-color: #000;
 		width: 450px;
@@ -45,7 +48,7 @@ body
 #cards
 	{
 		list-style-type: none;
-		margin-top: 30px;
+		margin-top: 40px;
 		margin-left: 50px;
 		width: 500px;
 		
@@ -60,6 +63,7 @@ body
 		border: solid 1px #dcdcdc;
 		height: 350px;
 	}
+
 .card-image
 	{
 		display: block;
@@ -67,6 +71,20 @@ body
 		margin-right: auto;
 		margin-top: 60px;
 	}
+.gender-card p
+	{
+		color: #5A708C;
+		margin-top: 10px;
+		font-size: 24px;
+		text-align: center; 
+		margin-left: -5px;
+	}
+.gender-card p span
+	{
+		margin-left: 110px;
+	}
+
+
 
 .footer
 	{
