@@ -47,11 +47,11 @@ body
 
 #cards
 	{
-		list-style-type: none;
+		
 		margin-top: 40px;
 		margin-left: 50px;
 		width: 500px;
-		
+		height: 351px;
 		overflow: hidden;
 	}
 .stat-card
@@ -88,10 +88,10 @@ body
 
 .footer
 	{
-		height: 50px;
+		height: 30px;
 		background-color: #54ACBF;
 		width: auto;
-		margin-top: 40px;
+		margin-top: 70px;
 	}
 
 
