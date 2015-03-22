@@ -70,6 +70,10 @@ body
 		font-size: 24px;
 		text-align: center; 
 	}
+.health-card i
+	{
+		padding-right: 4px;
+	}
 
 #health-picture
 	{
@@ -123,7 +127,7 @@ body
 
 #labor-picture
 	{
-		margin-top: 60px;
+		margin-top: 110px;
 		max-width:300px;
 		margin-left: auto;
 		margin-right: auto;
@@ -166,6 +170,11 @@ body
 #urban
 	{
 		margin-left: 180px;
+	}
+
+.labor-card i 
+	{
+		font-size: 44px;
 	}
 
 .age-card p
