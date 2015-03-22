@@ -354,3 +354,8 @@ body
 #scroller{
 	text-align: center;
 }
+@media (max-width: 500px) {
+ 	#cards, #map{
+ 		width: 100%;
+ 	}
+ }
