@@ -83,21 +83,21 @@ body
 		margin-right: auto;
 		text-align: justify;
 		font-size: 16px;
-		color: red;
+		color: #e74c3c;
 	}
 #use-health
 	{
-		color: green;
+		color: #2ecc71;
 		font-size: 16px;
 	}
 .use-health-text
 	{
-		color: green;
+		color: #2ecc71;
 	}
 .not-use-health-text
 	{
 		margin-left: 180px;
-		color: red;
+		color: #e74c3c;
 	}
 
 
@@ -226,7 +226,7 @@ body
 
 .footer
 	{
-		height: 30px;
+		height: 50px;
 		background-color: #54ACBF;
 		width: auto;
 		margin-top: 40px;
