@@ -70,6 +70,12 @@ function setData(data){
 	$('#rural').html(data.rural);
 	$('#male').html(data.male);
 	$('#female').html(data.female);
+	//religions
+
+	$('.hindu').html(data.hindu);
+	$('.muslim').html(data.muslim);
+	$('.christian').html(data.christian);
+	$('#others').html(data.others);
 }
 
 
