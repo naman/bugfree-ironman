@@ -6,7 +6,7 @@ applications:
   domain: mybluemix.net
   instances: 1
   memory: 128M
-  command: bundle
+  command: bundle exec ruby parse.rb -p $PORT
   env:
     RAILS_ENV: production
     RACK_ENV: production 
