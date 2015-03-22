@@ -92,7 +92,7 @@ $(document).ready(function(){
 	$.getJSON("/api", function(data){
 		api = data;
 		setData(api.India);
-		$("#india-link").click(function(){
+		$("#people").click(function(){
 
 			$('.RegionName').html("India");
 			setData(api.India);
