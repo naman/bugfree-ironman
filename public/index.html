@@ -3,150 +3,170 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-      <title>what if | Incredible India</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/jquery-jvectormap-2.0.2.css">
-        <link rel="stylesheet" href="css/slick.css">
-        
-        <link rel="stylesheet" href="css/slick-theme.css">
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
+<head>
+  <title>What if | Incredible India</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/jquery-jvectormap-2.0.2.css">
+  <link rel="stylesheet" href="css/slick.css">
+
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    
+            <![endif]-->
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <img src="img/people.png" id="people">
+            <div class="container">
+              <!-- Example row of columns -->
+              <div class="row">
+                <img src="img/people.png" id="people">
                 <p id="whatif">what if <span id="whatif" class="RegionName">India</span> had 100 people?</p>   
-      </div>
-      <div class="row">
-        <div class="col-md-5">
-          <div class="row" id="map">
+              </div>
+              <div class="row">
+                <div class="col-md-5">
+                  <div class="row" id="map">
+                  </div>
+                </div>
+                <div class="col-md-5">
+                 <div class="row">
+                   <div id="abcd">DOWNLOAD</div>
+<!-- 
+                  <input type="submit" class="btn-info" value="Save" onclick="capture();" />
+                  <form method="POST" enctype="multipart/form-data" action="/image" id="myForm">
+                    <input type="hidden" name="img" id="img" value="" />
+                  </form> -->
+
+                  <div class="target">
+                    <div id="cards">
+                      <div class="stat-card employment-card">
+                        <img src="img/employment.png" class="card-image">
+                        <p><span class="employed" data-toggle="tooltip" data-placement="top" title="Employed">52</span><span class="unemployed" data-toggle="tooltip" data-placement="top" title="Unemployed">48</span></p>
+                      </div>
+
+                      <div class="stat-card toilet-card">
+                        <img src="img/toilet.png" class="card-image">
+                        <p><span id="have-toilet" data-toggle="tooltip" data-placement="top" title="People with access to a toilet">52</span><span id="not-have-toilet" data-toggle="tooltip" data-placement="top" title="People with no access to toilets">48</span></p>
+                      </div>
+
+
+                      <div class="stat-card health-card">
+                        <div id="health-picture">
+                          <span id="use-health" data-toggle="tooltip" data-placement="top" title="People who use govt. health facilities">
+                           <i class="fa fa-user-plus"></i></span><span id="not-use-health" data-toggle="tooltip" data-placement="top" title="People who don't use govt. health facilities"><i class="fa fa-user-times"></i>
+                         </span>
+                       </div>
+                       <p><span class="use-health-text" data-toggle="tooltip" data-placement="right" title="People who use govt. health facilities">60</span><span class="not-use-health-text" data-toggle="tooltip" data-placement="left" title="People who don't use govt. health facilities">40</span></p>
+                     </div>
+
+                     <div class="stat-card literacy-card">
+                      <div id="literacy-picture">
+                        <span id="literate" data-toggle="tooltip" data-placement="top" title="Literate Population">
+                         <i class="fa fa-graduation-cap"></i></span><span id="illiterate" data-toggle="tooltip" data-placement="top" title="Illiterate Population"><i class="fa fa-graduation-cap"></i>
+                       </span>
+                     </div>
+                     <p><span class="lit-text" data-toggle="tooltip" data-placement="right" title="Literate Population">73</span><span class="illit-text" data-toggle="tooltip" data-placement="left" title="Illiterate Population">27</span></p>
+                   </div>
+
+                   <div class="stat-card labor-card">
+                    <div id="labor-picture">
+                      <span id="labor" data-toggle="tooltip" data-placement="top" title="Labouring Children">
+                        <i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i></span>
+                      </div>
+                      <p>There are <span class="labor-text" data-toggle="tooltip" data-placement="right" title="Labouring Children">2</span> children<br>involved in Child Labor.</p>
+                    </div>
+
+                    <div class="stat-card urbanrural-card">
+                      <img src="img/urbanrural.png" class="urbanrural-card-image">
+                      <p><span id="rural" data-toggle="tooltip" data-placement="top" title="Rural population">69</span><span id="urban" data-toggle="tooltip" data-placement="top" title="Urban Population">31</span></p>
+                    </div>
+                    <div class="stat-card religion-card">
+                      <img src="img/religion.png" class="card-image">
+                      <p><span class="muslim" data-toggle="tooltip" data-placement="top" title="Muslims">30</span><span class="hindu" data-toggle="tooltip" data-placement="top" title="Hindu">40</span><span class="christian" data-toggle="tooltip" data-placement="top" title="Christians">40</span><br><br><span class="other-religions">Others: <span id="others">20</span></span></p>
+                    </div>
+                    <div class="stat-card age-card">
+                      <img src="img/ages.png" class="card-image">
+                      <p><span class="young" data-toggle="tooltip" data-placement="top" title="Aged 0-18 years">30</span><span class="adult" data-toggle="tooltip" data-placement="top" title="Aged 18-60 years">40</span><span class="old" data-toggle="tooltip" data-placement="top" title="Aged 60+">40</span></p>
+                    </div>
+                    <div class="stat-card gender-card">
+                      <img src="img/gender.png" class="card-image">
+                      <p><span id="male">52</span><span id="female">48</span></p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-2">
+              <div id="scroller">
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Employment"><i class="fa fa-suitcase"></i></h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Toilet Access">O</h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Govt. Health Facilities"><i class="fa fa-user-plus"></i></h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Literacy"><i class="fa fa-graduation-cap"></i></h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Child Labor"><i class="fa fa-child"></i></h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Rural / Urban"><i class="fa fa-home"></i></h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Religion Diversity">O</h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Age Groups">O</h2></div>
+                <div><h2 data-toggle="tooltip" data-placement="bottom" title="Gender Ratio"><i class="fa fa-transgender"></i></h2></div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- /container -->        
+        <div class="footer">
+          <div class="container">
+
           </div>
         </div>
-        <div class="col-md-5">
-         <div class="row">
-          
-
-          <div id="cards">
-            
-
-            <div class="stat-card employment-card">
-              <img src="img/employment.png" class="card-image">
-              <p><span class="employed" data-toggle="tooltip" data-placement="top" title="Employed">52</span><span class="unemployed" data-toggle="tooltip" data-placement="top" title="Unemployed">48</span></p>
-            </div>
-
-            <div class="stat-card toilet-card">
-              <img src="img/toilet.png" class="card-image">
-              <p><span id="have-toilet" data-toggle="tooltip" data-placement="top" title="People with access to a toilet">52</span><span id="not-have-toilet" data-toggle="tooltip" data-placement="top" title="People with no access to toilets">48</span></p>
-            </div>
-
-
-            <div class="stat-card health-card">
-              <div id="health-picture">
-                <span id="use-health" data-toggle="tooltip" data-placement="top" title="People who use govt. health facilities">
-                 <i class="fa fa-user-plus"></i></span><span id="not-use-health" data-toggle="tooltip" data-placement="top" title="People who don't use govt. health facilities"><i class="fa fa-user-times"></i>
-                  </span>
-              </div>
-              <p><span class="use-health-text" data-toggle="tooltip" data-placement="right" title="People who use govt. health facilities">60</span><span class="not-use-health-text" data-toggle="tooltip" data-placement="left" title="People who don't use govt. health facilities">40</span></p>
-            </div>
-
-            <div class="stat-card literacy-card">
-              <div id="literacy-picture">
-                <span id="literate" data-toggle="tooltip" data-placement="top" title="Literate Population">
-                 <i class="fa fa-graduation-cap"></i></span><span id="illiterate" data-toggle="tooltip" data-placement="top" title="Illiterate Population"><i class="fa fa-graduation-cap"></i>
-                  </span>
-              </div>
-              <p><span class="lit-text" data-toggle="tooltip" data-placement="right" title="Literate Population">73</span><span class="illit-text" data-toggle="tooltip" data-placement="left" title="Illiterate Population">27</span></p>
-            </div>
-
-            <div class="stat-card labor-card">
-              <div id="labor-picture">
-                <span id="labor" data-toggle="tooltip" data-placement="top" title="Labouring Children">
-                  <i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i><i class="fa fa-child"></i></span>
-              </div>
-              <p>There are <span class="labor-text" data-toggle="tooltip" data-placement="right" title="Labouring Children">2</span> children<br>involved in Child Labor.</p>
-            </div>
-
-            <div class="stat-card urbanrural-card">
-              <img src="img/urbanrural.png" class="urbanrural-card-image">
-              <p><span id="rural" data-toggle="tooltip" data-placement="top" title="Rural population">69</span><span id="urban" data-toggle="tooltip" data-placement="top" title="Urban Population">31</span></p>
-            </div>
-            <div class="stat-card religion-card">
-              <img src="img/religion.png" class="card-image">
-              <p><span class="muslim" data-toggle="tooltip" data-placement="top" title="Muslims">30</span><span class="hindu" data-toggle="tooltip" data-placement="top" title="Hindu">40</span><span class="christian" data-toggle="tooltip" data-placement="top" title="Christians">40</span><br><br><span class="other-religions">Others: <span id="others">20</span></span></p>
-            </div>
-            <div class="stat-card age-card">
-              <img src="img/ages.png" class="card-image">
-              <p><span class="young" data-toggle="tooltip" data-placement="top" title="Aged 0-18 years">30</span><span class="adult" data-toggle="tooltip" data-placement="top" title="Aged 18-60 years">40</span><span class="old" data-toggle="tooltip" data-placement="top" title="Aged 60+">40</span></p>
-            </div>
-            <div class="stat-card gender-card">
-              <img src="img/gender.png" class="card-image">
-              <p><span id="male">52</span><span id="female">48</span></p>
-            </div>
-
-          </div>
-         
-         </div>
-       </div>
-    
-       <div class="col-md-2">
-          <div id="scroller">
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Employment"><i class="fa fa-suitcase"></i></h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Toilet Access">O</h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Govt. Health Facilities"><i class="fa fa-user-plus"></i></h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Literacy"><i class="fa fa-graduation-cap"></i></h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Child Labor"><i class="fa fa-child"></i></h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Rural / Urban"><i class="fa fa-home"></i></h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Religion Diversity">O</h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Age Groups">O</h2></div>
-            <div><h2 data-toggle="tooltip" data-placement="bottom" title="Gender Ratio"><i class="fa fa-transgender"></i></h2></div>
-          </div>
-        </div>
-
-      </div>
-    </div> <!-- /container -->        
-    <div class="footer">
-      <div class="container">
-        
-      </div>
-    </div>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/jquery-jvectormap-2.0.2.min.js"></script>
         <script src="js/jquery-in.js"></script>
         <script src="js/slick.js"></script>
+        <script type="text/javascript" src="js/html2canvas.js"></script>
+        <script type="text/javascript" src="js/jquery.plugin.html2canvas.js"></script>  
+        <script type="text/javascript">
+        //   function capture() {
+        //     $('#target').html2canvas({
+        //       onrendered: function (canvas) {
+        //     //Set hidden field's value to image data (base-64 string)
+        //     $('#img').val(canvas.toDataURL("image/png"));
+        //     // location.href="/image";
+        //     //Submit the form manually
+        //     document.getElementById("myForm").submit();
+        //   }
+        // });
+          // }
+          $('#abcd').click(function(){
+            html2canvas($("#cards"), {
+              onrendered: function(canvas) {
+            // canvas is the final rendered <canvas> element
+            var myImage = canvas.toDataURL("image/png");
+            window.open(myImage);
+          }
+        });
+          });
+        </script>
         <script src="js/main.js"></script>
 
         <script type="text/javascript">
-        $(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+          $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+          })
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -158,6 +178,6 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script> -->
-    </body>
-</html>
+          </script> -->
+        </body>
+        </html>

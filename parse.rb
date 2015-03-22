@@ -117,9 +117,9 @@ end
 require 'rubygems'
 
 get '/' do
-  html :index
+	html :index
 end
 
 def html(view)
-  File.read(File.join('public', "#{view.to_s}.html"))
+	File.read(File.join('public', "#{view.to_s}.html"))
 end
