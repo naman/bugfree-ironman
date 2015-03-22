@@ -13,7 +13,8 @@ get '/api' do
 	# 10-child labour %,11- utilization of govt health services,12- child marriage girls, 13- child marriage boys,
 	# %age - 14 - total toilet 15 - rural toilet 16 - urban toilet 
 	# 17 unemployment rural /100, 18- unemployment urban/100
-	# religion absolute 19 - hindu, 20 - muslim, 21-christian 22- others
+	# religion absolute 19- total 20 - hindu, 21 - muslim, 22-christian 23- others
+	# 24 young, 25 adult, 26 old
 	# male,female,literate,illiterate,rural,urban, child_labour, health_services, total_toilet, urban_toilet, rural_toilet
 	# urban_unemployed, rural_unemployed , child_marriage_girl, child_marriage_boy, hindu, muslim, christian, others
 	row0 = sheet1.row(0)
@@ -31,10 +32,14 @@ get '/api' do
 		rural = (row[6].to_f/row[1].to_f*100.0).round
 		urban = 100 -rural
 
-		hindu = (row[19].to_f/row[1].to_f*100.0).round
-		muslim = (row[20].to_f/row[1].to_f*100.0).round
-		christian = (row[21].to_f/row[1].to_f*100.0).round
+		hindu = (row[20].to_f/row[19].to_f*100.0).round
+		muslim = (row[21].to_f/row[19].to_f*100.0).round
+		christian = (row[22].to_f/row[19].to_f*100.0).round
 		others = 100 - hindu - muslim - christian
+
+		young = (row[24].to_f/row[19].to_f*100.0).round
+		adult = (row[25].to_f/row[19].to_f*100.0).round
+		old = 100 - young - adult
 
 		#stage 2
 		#child labour calcs
@@ -57,7 +62,8 @@ get '/api' do
 
 		# id = sheet1.count
 		state[row[0]] = {male: male,female: female,literate: l,illiterate: ul,urban: urban,rural: rural,child_labour: childl,
-			total_toilet: total_toilet,urban_toilet: urban_toilet,rural_toilet: rural_toilet,hindu: hindu, muslim: muslim, christian: christian,others: others}
+			total_toilet: total_toilet,urban_toilet: urban_toilet,rural_toilet: rural_toilet,hindu: hindu, muslim: muslim, christian: christian,others: others,
+			young: young,adult: adult,old: old}
 
 		#accumulate next three parameters
 		if row[11]
