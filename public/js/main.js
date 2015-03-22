@@ -7,10 +7,10 @@ $(document).ready(function(){
 	$('#map svg path').click(function () {
 		
 		map = $("#map").vectorMap('get', 'mapObject');
-		$('.RegionName').html(map.getRegionName($(this).data("code")));
+		region = map.getRegionName($(this).data("code"));
+		$('.RegionName').html(region);
 		$.getJSON("/api", function(data){
-			if (map.getRegionName($(this).data("code") == "") {};
-             $('.male').html(data.r1.male);
+			console.log(data[region]);
     	});
 	});
 
