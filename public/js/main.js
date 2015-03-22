@@ -57,7 +57,7 @@ function createlab (argument) {
 
 function setData(data){
 	//  male,female,literate,illiterate,rural,urban, child_labour, health, total_toilet, urban_toilet, rural_toilet
-	//  urban_unemployed, rural_unemployed , child_marriage_girl, child_marriage_boy
+	//  urban_unemployed, rural_unemployed , child_marriage_girl, child_marriage_boy, hindu, muslim, christian, others
 
 	//Toilet card
 	// mulandcreate($("#have_toilet"),data.total_toilet/10);
