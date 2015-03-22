@@ -1,0 +1,7 @@
+---
+applications:
+- name: 100people
+  command: bundle
+  env:
+    RAILS_ENV: production
+    RACK_ENV: production 
