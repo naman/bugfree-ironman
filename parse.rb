@@ -13,7 +13,8 @@ get '/api' do
 	# 10-child labour %,11- utilization of govt health services,12- child marriage girls, 13- child marriage boys,
 	# %age - 14 - total toilet 15 - rural toilet 16 - urban toilet 
 	# 17 unemployment rural /100, 18- unemployment urban/100
-	# male,female,literate,illiterate,rural,urban, child_labour, health_services
+	# male,female,literate,illiterate,rural,urban, child_labour, health_services, total_toilet, urban_toilet, rural_toilet
+	# urban_unemployed, rural_unemployed , child_marriage_girl, child_marriage_boy
 	row0 = sheet1.row(0)
 	cmg = []
 	cmb = []

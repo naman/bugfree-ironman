@@ -81,7 +81,7 @@ body
 		font-size: 24px;
 		color: red;
 	}
-.use-health
+#use-health
 	{
 		color: green;
 	}
@@ -105,7 +105,7 @@ body
 		font-size: 24px;
 		color: #bdc3c7;
 	}
-.literate
+#literate
 	{
 		color: #f39c12;
 	}
@@ -129,7 +129,7 @@ body
 		font-size: 24px;
 		color: #5A708C;
 	}
-.labor 
+#labor 
 	{
 		color: #f39c12;
 	}
@@ -161,7 +161,7 @@ body
 		 
 		margin-left: 10px;
 	}
-.urban
+#urban
 	{
 		margin-left: 180px;
 	}
@@ -190,11 +190,11 @@ body
 		 
 		margin-left: -5px;
 	}
-.female
+#female
 	{
 		margin-left: 110px;
 	}
-.not-have-toilet
+#not-have-toilet
 	{
 		margin-left: 110px;
 	}
