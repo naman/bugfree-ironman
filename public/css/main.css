@@ -218,6 +218,14 @@ body
 	}
 
 
+#printRow
+	{
+		text-align: center;
+	}
+#abcd
+	{
+		font-size: 24px;
+	}
 
 #scroller
 	{
