@@ -3,7 +3,7 @@ $(document).ready(function(){
 	map = $("#map").vectorMap('get', 'mapObject');
 	map.setBackgroundColor("#5A708C")
 	// $("#cards").slick();		
-
+/*
 	$('#map svg path').click(function () {
 		
 		map = $("#map").vectorMap('get', 'mapObject');
@@ -13,7 +13,7 @@ $(document).ready(function(){
 			console.log(data[region]);
     	});
 	});
-
+*/
 
 	$('#cards').slick({
   slidesToShow: 1,
