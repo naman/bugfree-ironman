@@ -7,14 +7,13 @@ $(document).ready(function(){
 	$('#map svg path').click(function () {
 		
 		map = $("#map").vectorMap('get', 'mapObject');
-		$('.RegionName').html(
-			map.getRegionName($(this).data("code")
-				)
-			);
+		$('.RegionName').html(map.getRegionName($(this).data("code")));
+		$.getJSON("/api", function(data){
+			if (map.getRegionName($(this).data("code") == "") {};
+             $('.male').html(data.r1.male);
+    	});
 	});
-	$.getJSON("/api", function(data){
-              console.log(data);
-    });
+
 
 	$('#cards').slick({
   slidesToShow: 1,
@@ -33,9 +32,4 @@ $('#scroller').slick({
   focusOnSelect: true,
   vertical: true
 });
-
-
-
-
-
 });

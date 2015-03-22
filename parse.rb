@@ -20,10 +20,8 @@ get '/api' do
 	hs = []
 	ru = []
 	uu = []
-	count=0
 	childl_def = row0[10]
 	sheet1.each do |row|
-		count+=1
 		male = (row[3].to_f/row[1].to_f*100.0).round
 		female = 100 - male
 		l = (row[5]).round
@@ -51,7 +49,7 @@ get '/api' do
 		rural_toilet = row[15].round
 
 		# id = sheet1.count
-		state[row[0]] = {id: count, male: male,female: female,literate: l,illiterate: ul,urban: urban,rural: rural,child_labour: childl,total_toilet: total_toilet,urban_toilet: urban_toilet,rural_toilet: rural_toilet}
+		state[row[0]] = {male: male,female: female,literate: l,illiterate: ul,urban: urban,rural: rural,child_labour: childl,total_toilet: total_toilet,urban_toilet: urban_toilet,rural_toilet: rural_toilet}
 
 		#accumulate next three parameters
 		if row[11]
