@@ -70,6 +70,9 @@ function setData(data){
 	$('#rural').html(data.rural);
 	$('#male').html(data.male);
 	$('#female').html(data.female);
+	unemployed = Math.round((data.urban_unemployed + data.rural_unemployed)/2);
+	$('.employed').html(100 - unemployed);
+	$('.unemployed').html(unemployed);
 	//religions
 
 	$('.hindu').html(data.hindu);
@@ -88,6 +91,12 @@ $(document).ready(function(){
 	var api;
 	$.getJSON("/api", function(data){
 		api = data;
+		setData(api.India);
+		$("#india-link").click(function(){
+
+			$('.RegionName').html("India");
+			setData(api.India);
+		});	
 	});
 	$('#map svg path').click(function () {
 		
