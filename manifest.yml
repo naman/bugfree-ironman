@@ -1,6 +1,11 @@
----
 applications:
-- name: 100people
+- disk_quota: 1024M
+  host: 100people
+  name: 100people
+  path: .
+  domain: mybluemix.net
+  instances: 1
+  memory: 128M
   command: bundle
   env:
     RAILS_ENV: production
