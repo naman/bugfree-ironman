@@ -71,6 +71,30 @@ body
 		text-align: center; 
 	}
 
+#health-picture
+	{
+		margin-top: 60px;
+		max-width:300px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: justify;
+		font-size: 24px;
+		color: red;
+	}
+.use-health
+	{
+		color: green;
+	}
+.use-health-text
+	{
+		color: green;
+	}
+.not-use-health-text
+	{
+		margin-left: 180px;
+	}
+
+
 #literacy-picture
 	{
 		margin-top: 60px;
@@ -171,7 +195,10 @@ body
 		margin-left: 110px;
 	}
 
-
+#scroller
+	{
+		margin-top: 70px;
+	}
 
 .footer
 	{
