@@ -79,6 +79,11 @@ function setData(data){
 	$('.muslim').html(data.muslim);
 	$('.christian').html(data.christian);
 	$('#others').html(data.others);
+
+	// age
+	$('.young').html(data.young);
+	$('.adult').html(data.adult);
+	$('.old').html(data.old);
 }
 
 
