@@ -4,6 +4,18 @@ $(document).ready(function(){
 	map.setBackgroundColor("#5A708C")
 	// $("#cards").slick();		
 
+	$('#map svg path').click(function () {
+		
+		map = $("#map").vectorMap('get', 'mapObject');
+		$('.RegionName').html(
+			map.getRegionName($(this).data("code")
+				)
+			);
+	});
+	$.getJSON("/api", function(data){
+              console.log(data);
+    });
+
 	$('#cards').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -21,4 +33,9 @@ $('#scroller').slick({
   focusOnSelect: true,
   vertical: true
 });
+
+
+
+
+
 });
