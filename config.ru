@@ -2,5 +2,5 @@ require 'rubygems'
 require 'bundler'
 Bundler.require
 
-require './parse.rb'
+require './app.rb'
 run Sinatra::Application
