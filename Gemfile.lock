@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     json (1.8.2)
-    rack (1.6.1)
+    rack (1.5.2)
     rack-protection (1.5.3)
       rack
     ruby-ole (1.2.11.8)
@@ -19,5 +19,6 @@ PLATFORMS
 
 DEPENDENCIES
   json
+  rack (= 1.5.2)
   sinatra
   spreadsheet
